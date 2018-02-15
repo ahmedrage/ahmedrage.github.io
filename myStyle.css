@@ -2,49 +2,49 @@
   background-color: #FFFFFF;
   width: 100%;
   height: 85vh;
-  font-size: 20vh;
-  padding-left: 1%;
+  font-size: 10vh;
   font-family: Arial;
   color: #040303;
   position: fixed;
   top: 0;
-  margin-right: 2%;
 
 }
 
 .LanguagesText {
   height: 110vh;
-  margin-top: 75vh;
+  margin-top: 80vh;
   position: absolute;
   background-color: #788585;
   width: 100%;
-  font-size: 18vh;
-  padding-left: 1%;
+  font-size: 9vh;
   font-family: Arial;
   color: #EAF2E3;
-  margin-right: 2%;
+}
 
+.nameText {
+  margin-top: 70vh;
+  position: relative;
+  width: 100vh;
+  font-size: 9vh;
+  font-family: Arial;
+  color: black;
+  padding-left: 5vh;
 }
 
 .ProjectsText {
-  color: #5E6472;
+  color: #000000;
   position:absolute;
   top: 185vh;
   background-color: #8AF3FF;
-  width: 100%;
-  font-size: 18vh;
+  width: 99%;
+  font-size: 2vh;
   padding-left: 1%;
   font-family: Arial;
-  margin-right: 2%;
+}
+.middle {
+  align-self: center;
+}
 
-}
-td {
-    vertical-align: middle;
-    left: 5%;
-    padding-left: 1%;
-    padding-top: 5%;
-    font-size: 8vh;
-}
 table {
   width: 100%;
 }
@@ -57,27 +57,121 @@ table {
 }
 
 .ProjectImage {
-  height: 40vh;
+  position: relative;
+  top: 30%;
+  height:40vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto
 }
 
+.ProjectImage.right {
+
+}
+
+.Project {
+  width: 100%;
+}
 .RightDiv {
   width:45%;
   float:right;
   color: #FFFFFF;
 }
+
+
+.Arrow {
+  position: absolute;
+  top: 40%;
+  width: 8vh;
+  cursor: pointer;
+  -webkit-transition: transform 0.5s, width 0.25s;
+  transform: none;
+}
+
+.Arrow:hover {
+  width: 10vh;
+}
+
+.Arrow:active {
+  transform: rotate(360deg);
+  -webkit-transition: transform 0s;
+}
+
+.Achieve{
+  -webkit-transition: filter 0.5s;
+  z-index:-1;
+  position:absolute;
+  float:left;
+  top:0px;
+  min-height:100%
+  min-width:100%;
+
+}
+
+.Achieves{
+  filter: blur(5px);
+}
+.SubAchieve {
+  z-index:0;
+  width: 50%;
+  height: 40vh;
+  font-size: 10vh;
+  left: 0;
+  line-height: 70vh;
+  text-align: center;
+  -webkit-transition: line-height 0.25s, height 0.5s;
+  position: relative;
+  overflow: hidden;
+}
+
+.SubAchieve:hover {
+  line-height: 20vh;
+  overflow-y: hidden;
+}
+
 .LangDiv {
   padding-top: 10%;
   margin: 0;
-  margin-right: 2%;
+  font-size: 18vh;
+}
 
+.achievement {
+  padding: 10vh;
+  padding-top: 0vh;
+  padding-bottom: 0vh;
+  margin: 0;
+  font-size: 5vh;
+  position: relative;
+  height: 80vh;
+  vertical-align: middle;
+  display:table-cell;
+  width: 500vh;
+}
+.achText {
+  top: 20%;
+  position: relative;
+  vertical-align: middle;
+}
+
+.achImg {
+  width: 50vh;
+  vertical-align:middle;
+  float: left;
+  margin-right: 10vh;
 }
 body {
   margin-top: 0;
   margin-left: 0;
-  margin-right: 2%;
+  margin-right: 0;
   background-color: #788585;
+  width: 10vh;
 }
+td {
+  position: relative;
+  top: 10%;
+  transform: translateY(-0%);
 
+}
 .LangDesc {
   padding: 0;
   margin: 0;

@@ -4,14 +4,12 @@
       <link rel="stylesheet" type="text/css" href="myStyle.css">
       <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
       <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-
-
     </head>
     <body>
       <div class ="AhmedText">
       hi.<br>I'm Ahmed.<br>
       </div>
-      <div class ="LanguagesText">
+      <div class ="LanguagesText" style="background-color: #5B1A18;">
         I know these languages:
         <div class ="LeftDiv">
           <div data-aos="fade-right" class = "LangDiv">
@@ -27,7 +25,6 @@
             <span class ="LangDesc">PHP</span>
           </div>
         </div>
-
         <div class ="RightDiv">
           <div data-aos="fade-left" class = "LangDiv">
             <i class="devicon-swift-plain"></i>
@@ -43,41 +40,31 @@
           </div>
         </div>
       </div>
-      <div class = "ProjectsText">
-        Here's some of my work:
-        <table>
-          <tr data-aos="zoom-in">
-            <td><img class = "ProjectImage" src = "images/MurderAtTheDinnerTable.jpg">  </td>
-            <td>Murder At The Dinner Table</td>
-          </tr>
-          <tr data-aos="zoom-in">
-            <td><img class = "ProjectImage" src = "images/OutOfTheDarkness.jpg">  </td>
-            <td>Out Of The Darkness</td>
-          </tr>
-          <tr data-aos="zoom-in">
-            <td><img class = "ProjectImage" src = "images/WhiteCollar.png">  </td>
-            <td>White Collar</td>
-          </tr>
-          <tr data-aos="zoom-in">
-            <td><img class = "ProjectImage" src = "images/ValkyrieShift.PNG">  </td>
-            <td>Valkyrie Shift</td>
-          </tr>
-          <tr data-aos="zoom-in">
-            <td><img class = "ProjectImage" src = "images/TheThick.jpg">  </td>
-            <td>The Thick</td>
-          </tr>
-          <tr data-aos="zoom-in">
-            <td><img class = "ProjectImage" src = "images/Rampage.jpg">  </td>
-            <td>Rampage</td>
-          </tr>
-        </table>
+      <div class = "ProjectsText" style="background-color: #d7f8ff;">
+        <h1>Here's some of my work:</h1>
+
+
+
+        <div class = "Project">
+          <h3 style = "text-decoration: underline;text-align:center;" id ="slideName"> </h3>
+          <img style = "left: 10%;"  class="Arrow" src ="images/Backward.png" onclick="nextPhoto(-1)">
+          <img id = "Slide" class = "ProjectImage" src = "images/MurderAtTheDinnerTable.jpg">
+          <img style = "right: 10%;" class = "Arrow" src ="images/Forward.png" onclick="nextPhoto(1)"> <br>
+        </div>
+        <p style = "text-align:center;" id ="slideDesc"> </p>
+      </div>
+      <div class = "LanguagesText" style="margin-top: 248vh; height: 90vh; background-color: #000000; color:#FFFFFF;font-size:10vh;">
+        These are a few of my achievements:
+        <br><br>
+          <a href = "http://google.com"><div onmouseover = "blurImage(document.getElementById('img1'), true);" onmouseout = "blurImage(document.getElementById('img1'), false);" class = "SubAchieve" style = "float:right; background-color:#7496D2;color:#FFFFFF;"><img id = "img1" class= "Achieve" src = "images/MATDTScrn.png"style = "left:0;"> Personal<br>More </div></a>
+          <a href = "http://google.com"><div onmouseover = "blurImage(document.getElementById('img2'), true);" onmouseout = "blurImage(document.getElementById('img2'), false);" class = "SubAchieve" style = "float:right; background-color:#C7CEF6;color:#FFFFFF;"><img id = "img2" id = "img1" class= "Achieve" src = "images/Mistakes.jpg"style = "left:0;"> Extra-Curricular<br>More</div></a>
+          <a href = "http://google.com"><div onmouseover = "blurImage(document.getElementById('img3'), true);" onmouseout = "blurImage(document.getElementById('img3'), false);" class = "SubAchieve" style = "float:left; background-color:#D8A49B;color:#000000;"><img id = "img3" class= "Achieve" src = "images/AieCert.JPG" style = "width:100%;left:0;">Vocational<br>More </div></a>
+          <a href = "secondary.html"><div onmouseover = "blurImage(document.getElementById('img4'), true);" onmouseout = "blurImage(document.getElementById('img4'), false);" class = "SubAchieve" style = "float:left; background-color:#E6A2C5;color:#000000;"><img id = "img4" class= "Achieve" src = "images/IT2.JPG"style = "right:0; bottom: 1000px;">Secondary Education<br>More</div></a>
+
+
       </div>
       <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-      <script>
-      
-        AOS.init({
-          easing: 'ease-in-out-sine'
-        });
-  </script>
+      <script src="myScript.js"></script>
+      <script>nextPhoto(0);</script>
     </body>
   </html>

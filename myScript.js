@@ -30,7 +30,17 @@ if (blur){
 }
 }
 
+var menuItems = [`<a href = "personal.html"><div onmouseover = "blurImage(document.getElementById('img1'), true);" onmouseout = "blurImage(document.getElementById('img1'), false);" class = "SubAchieve" style = "float:right; background-color:#7496D2;color:#FFFFFF;"><img id = "img1" class= "Achieve" src = "images/MATDTScrn.png"style = "left:0;"> Personal<br>More </div></a>`,
+`<a href = "extra.html"><div onmouseover = "blurImage(document.getElementById('img2'), true);" onmouseout = "blurImage(document.getElementById('img2'), false);" class = "SubAchieve" style = "float:right; background-color:#C7CEF6;color:#FFFFFF;"><img id = "img2" id = "img1" class= "Achieve" src = "images/Mistakes.jpg"style = "left:0;"> Extra-Curricular<br>More</div></a>`,
+`<a href = "vocational.html"><div onmouseover = "blurImage(document.getElementById('img3'), true);" onmouseout = "blurImage(document.getElementById('img3'), false);" class = "SubAchieve" style = "float:left; background-color:#D8A49B;color:#000000;"><img id = "img3" class= "Achieve" src = "images/AieCert.JPG" style = "width:100%;left:0;">Vocational<br>More </div></a>`,
+`<a href = "secondary.html"><div onmouseover = "blurImage(document.getElementById('img4'), true);" onmouseout = "blurImage(document.getElementById('img4'), false);" class = "SubAchieve" style = "float:left; background-color:#E6A2C5;color:#000000;"><img id = "img4" class= "Achieve" src = "images/IT2.jpg"style = "right:0; bottom: 1000px;">Secondary Education<br>More</div></a>`];
 
-AOS.init({
-  easing: 'ease-in-out-sine'
-});
+function printMenu (index) {
+  for (i = 0; i < menuItems.length; i++) {
+    if (i == index) {
+      document.write(`<a href = "index.html"><div class = "SubAchieve" style = "float:left; background-color:#E6A2C5;color:#000000;">Home<br>More</div></a>`)
+    } else {
+      document.write(menuItems[i]);
+    }
+  }
+}

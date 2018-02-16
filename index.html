@@ -4,6 +4,8 @@
       <link rel="stylesheet" type="text/css" href="myStyle.css">
       <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
       <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+      <script src="myScript.js"></script>
+
     </head>
     <body>
       <div class ="AhmedText">
@@ -56,15 +58,12 @@
       <div class = "LanguagesText" style="margin-top: 248vh; height: 90vh; background-color: #000000; color:#FFFFFF;font-size:10vh;">
         These are a few of my achievements:
         <br><br>
-          <a href = "http://google.com"><div onmouseover = "blurImage(document.getElementById('img1'), true);" onmouseout = "blurImage(document.getElementById('img1'), false);" class = "SubAchieve" style = "float:right; background-color:#7496D2;color:#FFFFFF;"><img id = "img1" class= "Achieve" src = "images/MATDTScrn.png"style = "left:0;"> Personal<br>More </div></a>
-          <a href = "http://google.com"><div onmouseover = "blurImage(document.getElementById('img2'), true);" onmouseout = "blurImage(document.getElementById('img2'), false);" class = "SubAchieve" style = "float:right; background-color:#C7CEF6;color:#FFFFFF;"><img id = "img2" id = "img1" class= "Achieve" src = "images/Mistakes.jpg"style = "left:0;"> Extra-Curricular<br>More</div></a>
-          <a href = "http://google.com"><div onmouseover = "blurImage(document.getElementById('img3'), true);" onmouseout = "blurImage(document.getElementById('img3'), false);" class = "SubAchieve" style = "float:left; background-color:#D8A49B;color:#000000;"><img id = "img3" class= "Achieve" src = "images/AieCert.JPG" style = "width:100%;left:0;">Vocational<br>More </div></a>
-          <a href = "secondary.html"><div onmouseover = "blurImage(document.getElementById('img4'), true);" onmouseout = "blurImage(document.getElementById('img4'), false);" class = "SubAchieve" style = "float:left; background-color:#E6A2C5;color:#000000;"><img id = "img4" class= "Achieve" src = "images/IT2.jpg"style = "right:0; bottom: 1000px;">Secondary Education<br>More</div></a>
-
-
+        <script>printMenu(5);</script>
       </div>
       <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-      <script src="myScript.js"></script>
       <script>nextPhoto(0);</script>
+      <script>AOS.init({
+        easing: 'ease-in-out-sine'
+      });</script>
     </body>
   </html>

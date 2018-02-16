@@ -146,6 +146,7 @@ table {
   vertical-align: middle;
   display:table-cell;
   width: 500vh;
+  color: grey;
 }
 .achText {
   top: 20%;
